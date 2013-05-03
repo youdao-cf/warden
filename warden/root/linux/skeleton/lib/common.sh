@@ -40,6 +40,7 @@ function setup_fs_other() {
   mount -n --bind $rootfs_path mnt
   mount -n --bind -o remount,ro $rootfs_path mnt
 
+  overlay_directory_in_rootfs /app rw
   overlay_directory_in_rootfs /dev rw
   overlay_directory_in_rootfs /etc rw
   overlay_directory_in_rootfs /home rw
