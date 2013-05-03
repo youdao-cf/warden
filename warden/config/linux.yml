@@ -53,3 +53,8 @@ network:
 user:
   pool_start_uid: 10000
   pool_size: 256
+
+
+port:
+  pool_start_port: 10000
+  pool_size: 10000
